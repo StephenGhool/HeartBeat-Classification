@@ -9,6 +9,8 @@ from scipy.io import wavfile as wav
 from scipy.fftpack import fft, fftfreq
 from scipy.signal import butter, lfilter, freqz
 import librosa.display
+import noisereduce as nr
+import pywt as pw
 
 # reading in dataset
 Main_data = pd.read_csv("Main_dataset.csv")
